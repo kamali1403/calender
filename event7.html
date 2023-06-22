@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+   <style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+   </style>
+</head>
+<body id="b">
+    <input id="a"  onfocus="focusoninput()" onblur="notfocusoninput()">
+    <script>
+        function focusoninput()
+        {
+            document.getElementById("a").style.backgroundColor="yellow"
+            
+            document.getElementById("b").style.backgroundImage="radial-gradient(purple,plum,purple,plum,purple,plum,purple,plum)"
+        }
+        function notfocusoninput()
+        {
+            document.getElementById("a").style.backgroundColor="white"
+            
+            document.getElementById("b").style.backgroundImage="none"
+        }
+        
+    </script>
+    
+</body>
+</html>

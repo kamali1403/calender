@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            transition: all 0.5s;
+        }
+        header{
+            width: 100%;
+            height: 400px;
+            background-image: url();
+            background-size:100% 600px ;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        button{
+            width: 80px;
+            height: 80px;
+            font-size: 60px;
+            background-color: transparent;
+            border: none;
+            text-shadow: 2px 2px 2px black;
+            color:white;
+            cursor: pointer;
+            font-weight:bold ;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button onclick=" leftButton()"><</button>
+        <button onclick="rightButton()">></button>
+    </header>
+    <script>
+        var num=0;
+        var imagearray=["0","1","2","3","4","5","6"]
+        var headerTag=document.querySelector("header")
+        function rightButton()
+        {
+            num++;
+            if(num>=0&&num<=imagearray.length-1)
+            {
+                headerTag.style.backgroundImage=`url(${imagearray[num]})`
+            }
+            else{
+                num=0;
+            }
+        }
+        function leftButton()
+        {
+            num--;
+            if(num>=0&&num<=imagearray.length-1)
+            {
+                headerTag.style.backgroundImage=`url(${imagearray[num]})`
+            }
+            else{
+                num=imagearray.length-1;
+            }
+        }
+            
+            </script>
+    
+</body>
+</html>

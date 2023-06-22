@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input readonly id="sec" value="60">
+    <input type="button" value="start" id="button" onclick="sec()">
+    <script>
+
+        var secCount=59;
+        function sec()
+        {
+            secCount--;
+            if(secCount>=0)
+            {
+                document.getElementById("sec").value=secCount;
+            }
+            else
+            {
+                document.getElementById("sec").value=60;
+                secCount=59;
+                clearTimeout(sec)
+            }
+            setTimeout(sec,1000);
+        }
+    </script>
+    
+</body>
+</html>

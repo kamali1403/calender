@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+           
+            font-size: 100px;
+            position: absolute;
+            top: 300px;
+        }
+    </style>
+   
+   
+</head>
+<body>
+    <h1>KAMALI</h1>
+    <script>
+        function colour()
+        {
+            var colorarray=["purple","white","pink","orange","black","yellow","red","lawngreen"]
+            var randomnum=Math.floor(Math.random()*colorarray.length)
+            // document.body.style.backgroundColor=colorarray[randomnum];
+            document.body.style.color=colorarray[randomnum];
+            setTimeout(colour,100)
+        }
+        colour()
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // (function (){
+        //     console.log("this is a IIFE")
+        // }
+        // )();
+        // (function (){
+        //     console.log("this is a 2nd IIFE")
+        // }
+        // )();
+
+        (function (a,b){
+             console.log(a+b)
+         }
+         )(4,5);
+
+         
+        var res=(function (a,b){
+                                return a-b;                    // /  this is return type
+                            }
+              )(4,5);
+        console.log(res)
+
+     var areaoftri=(function(base,height)
+         {
+           return 0.5*base*height;
+         })(4,5);
+         console.log(areaoftri)
+
+    </script>
+    
+</body>
+</html>

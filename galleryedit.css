@@ -1,0 +1,45 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: linear-gradient(75deg,#A9F1DF,#FFBBBB);
+}
+#imgcont{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+img{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+#filters,#transform{
+    width: 40%;
+    height: 100vh;
+    background-color: bisque;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-direction: column;
+}
+#transform{
+    background-color:#A9F1DF;
+}
+input{
+    width: 80%;
+}
+h4{
+    letter-spacing: 3px;
+}

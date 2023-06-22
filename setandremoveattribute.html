@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" oninput="enabled()">
+    <br><br>
+    <input type="button" value="login" disabled>
+    <script>
+        function enabled()
+        {
+            var allinput=document.querySelectorAll("input")
+            var valueFromInput=allInput[0].value;
+            var lenOfValue=valueFromInput.length;
+            if(lenOfValue)
+            {
+                allInput[1].removeAttribute("disabled")
+            }
+            else
+            {
+                allInput[1].setAttribute("disabled",true)
+            }
+        }
+    </script>
+</body>
+</html>

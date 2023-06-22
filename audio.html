@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+</head>
+<body>
+    <input type="button" value="play" onclick="playaudio()">
+    <input type="button" value="pause" onclick="pauseaudio()">
+    <input type="button" value="loop" onclick="loopaudio()">
+<script>
+    var audiofile=new Audio();
+    audiofile.src="./Chamkeela Angeelesi.mp3"
+    function playaudio()
+    {
+        audiofile.play();
+    }
+    function pauseaudio()
+    {
+        audiofile.pause();
+    }
+    function loopaudio()
+    {
+        audiofile.loop();
+    }
+
+</script>
+</body>
+</html>
